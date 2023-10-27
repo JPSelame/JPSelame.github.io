@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>US Map and Georgia State Map with Bar Graph</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="emory.png" type="image/x-icon">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+</head>
+
+<body>
+    <!-- SVG for the US Map -->
+    <svg id="usMap" viewBox="0 0 975 610">
+        <g fill="none" stroke="#000" stroke-linejoin="round" stroke-linecap="round">
+            <!-- Placeholder for the county boundaries -->
+            <path stroke="#aaa" stroke-width="0.5" id="counties"></path>
+            
+            <!-- Group for individual state paths -->
+            <g id="statePaths"></g>
+            
+            <!-- Placeholder for the state boundaries -->
+            <path stroke-width="0.5" id="states"></path>
+  
+            <!-- Placeholder for the nation boundary -->
+            <path id="nation"></path>
+        </g>
+    </svg>
+
+    <!-- SVG for the Georgia State Map -->
+    <svg id="georgiaMap" viewBox="0 0 975 610"></svg>
+
+    <!-- SVG for the Bar Graph -->
+    <h2>Number of Food Insecure Children in Counties</h2>
+    <svg id="barGraph" width="500" height="400"></svg>
+
+    <!-- Link to the external script files -->
+    <script src="script_usmap.js"></script>  <!-- US Map script -->
+    <script src="script_georgia.js"></script>  <!-- Georgia State Map script -->
+    <script src="script_bargraph.js"></script>  <!-- Bar Graph script -->
+</body>
+
+</html>

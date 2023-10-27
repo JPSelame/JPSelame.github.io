@@ -1,0 +1,18 @@
+body {
+    font-family: "Arial", sans-serif;
+}
+
+.states {
+    fill: #ddd;
+}
+
+
+.bar-label {
+    font-size: 12px;
+    fill: #333;
+}
+
+.bar-graph-container {
+    float: left;
+    margin-right: 20px;
+}
